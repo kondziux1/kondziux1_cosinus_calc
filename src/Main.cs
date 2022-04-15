@@ -9,8 +9,6 @@ class Runtime
     {
         pazdan paz = new();
         float i;
-        int j;
-        int k;
         float o = 1;
         float cis;
         bool som;
@@ -20,11 +18,12 @@ class Runtime
         som = true;
 
         Console.WriteLine("Shitty cosinus calculator by kondziux1");
-        Console.WriteLine("https://");
+        Console.WriteLine();
 
         Console.Write("can we start??");
         Console.Write(" (Y/n)");
-        while (som1 == true) {
+        while (som1 == true)
+        {
             var key1 = Console.ReadKey(true).Key;
             if (key1 == ConsoleKey.Y)
             {
@@ -38,7 +37,7 @@ class Runtime
             }
             Console.WriteLine(key1);
         }
-        
+
         Console.WriteLine("starting");
         Console.WriteLine("");
         Console.ForegroundColor = ConsoleColor.Yellow;
@@ -62,7 +61,7 @@ class Runtime
 
         while (som == true)
         {
-            
+
             var key = Console.ReadKey(true).Key;
 
             while (key == ConsoleKey.A)
@@ -78,7 +77,7 @@ class Runtime
                 key = 0;
                 c++;
             }
-            
+
             while (key == ConsoleKey.Q)
             {
                 cis = MathF.Cos(c);
@@ -120,6 +119,7 @@ class Runtime
             while (key == ConsoleKey.C)
             {
                 Console.Clear();
+                key = 0;
             }
             while (key == ConsoleKey.H)
             {
